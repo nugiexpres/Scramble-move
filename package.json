@@ -1,0 +1,38 @@
+{
+  "name": "scaffold-move",
+  "version": "0.0.1",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/move",
+      "packages/nextjs"
+    ]
+  },
+  "scripts": {
+    "account": "yarn workspace @scaffold-move/move account",
+    "chain": "yarn workspace @scaffold-move/move chain",
+    "deploy": "yarn workspace @scaffold-move/move publish",
+    "publish": "yarn workspace @scaffold-move/move publish",
+    "compile": "yarn workspace @scaffold-move/move compile",
+    "test": "",
+    "format": "yarn next:format",
+    "start": "yarn workspace @scaffold-move/nextjs dev",
+    "next:lint": "yarn workspace @scaffold-move/nextjs lint",
+    "next:format": "yarn workspace @scaffold-move/nextjs format",
+    "next:check-types": "yarn workspace @scaffold-move/nextjs check-types",
+    "next:build": "yarn workspace @scaffold-move/nextjs build",
+    "next:serve": "yarn workspace @scaffold-move/nextjs serve",
+    "postinstall": "husky install",
+    "precommit": "lint-staged",
+    "vercel": "yarn workspace @scaffold-move/nextjs vercel",
+    "vercel:yolo": "yarn workspace @scaffold-move/nextjs vercel:yolo"
+  },
+  "packageManager": "yarn@3.2.3",
+  "devDependencies": {
+    "husky": "^8.0.3",
+    "lint-staged": "^13.3.0"
+  },
+  "engines": {
+    "node": ">=18.17.0"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@scaffold-move/move",
+  "packageManager": "yarn@3.2.3",
+  "scripts": {
+    "account": "node scripts/init-account.js",
+    "chain": "aptos node run-local-testnet",
+    "deploy": "aptos move publish --assume-yes && node scripts/loadModules.js",
+    "publish": "aptos move publish --assume-yes && node scripts/loadModules.js",
+    "compile": "aptos move compile",
+    "test": ""
+  },
+  "dependencies": {
+    "aptos": "^1.21.0",
+    "js-yaml": "^4.1.0",
+    "minimist": "^1.2.8"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4",
+    "@types/minimist": "^1.2.5"
+  }
+}
